@@ -1,0 +1,162 @@
+:root {
+    --text-grey: rgb(33, 33, 33);
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(227, 99, 31);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header > nav {
+    width: 1130px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-content: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links > li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.links > li  a {
+    text-decoration: none;
+    color: white;
+}
+
+
+main > p {
+    text-align: center;
+    color: rgb(93, 93, 93);
+    font-size: 24px;
+    margin-top: 90px;
+}
+
+footer {
+    height: 52px;
+    background-color: rgb(15, 3, 3);
+    display: flex;
+    color: beige;
+    align-items: center;
+}
+
+footer > p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    width: 1140px;
+    margin: 0px auto;
+}
+
+header > h1 {
+    color: var(--text-grey);
+    margin: 30px auto;
+    font-weight: 400;
+}
+
+.row {
+    width: 1130px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-control {
+    margin: 30px;
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea {
+    min-width: 950px;
+    height: 150px;
+}
+
+input {
+    min-width: 500px;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 1070px;
+}
+
+button {
+    display: block;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(227, 99, 31);
+    border-radius: 5px;
+    margin: auto;
+}
+
+.card {
+    box-shadow: var(--box-shadow);
+    padding: 20px 30px;
+    border-radius: 10px;
+    height: 400px;
+    width: 370px;
+}
+
+.category {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-price {
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(97, 94, 94);
+    font-style: italic;
+}
+
+.card-image {
+    display: block;
+    height: 180px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
