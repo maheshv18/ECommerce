@@ -164,6 +164,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 80px;
+  padding: 10px;
 }
 
 .benefit {
@@ -172,6 +173,8 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
 }
 
 .benefit .icon {
@@ -227,6 +230,7 @@ img {
 
 .ac img {
   transition: all 500ms ease-in-out;
+  border-radius: 10px;
 }
 
 .ac:hover img {
@@ -244,6 +248,7 @@ img {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 4vw);
   gap: 2rem;
+  padding: 10px;
 }
 
 .ab .item {
@@ -255,6 +260,7 @@ img {
   height: 100%;
   width: 100%;
   transition: all 500ms ease-out;
+  border-radius: 8px;
 }
 
 .ab .item-1 img {
