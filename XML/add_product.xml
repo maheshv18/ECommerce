@@ -1,0 +1,147 @@
+<?xml version = "1.0"?>
+<!DOCTYPE Scheme [
+<!ELEMENT Scheme (Item)*>
+<!ELEMENT Item (ItemName, 
+ItemType, ItemPrice,QuantityLeft,
+StartDate,ItemCategory,MinQuantityToBuy,ItemLifeTime,Offers,Description)*>
+<!ELEMENT ItemName (Short-Form,Display-Name)>
+<!ELEMENT Short-Form (#PCDATA)>
+<!ELEMENT Display-Name (#PCDATA)>
+<!ELEMENT ItemType ( #PCDATA )>
+<!ELEMENT ItemPrice (#PCDATA)>
+<!ELEMENT QuantityLeft (#PCDATA)>
+<!ELEMENT StartDate (#PCDATA)>
+<!ELEMENT ItemCategory (#PCDATA)>
+<!ELEMENT MinQuantityToBuy (#PCDATA)>
+<!ELEMENT ItemLifeTime (#PCDATA)>
+<!ELEMENT Offers (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ATTLIST Item id ID #REQUIRED>
+<!ATTLIST ItemType noofyears CDATA #FIXED "two">
+<!ATTLIST ItemName country CDATA  #IMPLIED>
+<!ATTLIST Short-Form isNewItem (yes | no) "no">
+
+]>
+<Scheme>
+    <Item id="I1">
+        <ItemName>
+             <Short-Form isNewItem="yes">Rosted Chicken 65</Short-Form>
+            <Display-Name>Chicken 65</Display-Name>
+        </ItemName>
+        <ItemType>Non Veg</ItemType>
+        <ItemPrice>325</ItemPrice>
+        <QuantityLeft> 50 </QuantityLeft>
+        <StartDate>18/10/2022</StartDate>
+        <ItemCategory>Stater</ItemCategory>
+        <MinQuantityToBuy>1</MinQuantityToBuy>
+        <ItemLifeTime>14 hrs</ItemLifeTime>
+        <Offers>10 percent </Offers>
+        <Description><?xml version = "1.0"?>
+<!DOCTYPE Scheme [
+<!ELEMENT Scheme (Item)*>
+<!ELEMENT Item (ItemName, 
+ItemType, ItemPrice,QuantityLeft,
+StartDate,ItemCategory,MinQuantityToBuy,ItemLifeTime,Offers,Description)*>
+<!ELEMENT ItemName (Short-Form,Display-Name)>
+<!ELEMENT Short-Form (#PCDATA)>
+<!ELEMENT Display-Name (#PCDATA)>
+<!ELEMENT ItemType ( #PCDATA )>
+<!ELEMENT ItemPrice (#PCDATA)>
+<!ELEMENT QuantityLeft (#PCDATA)>
+<!ELEMENT StartDate (#PCDATA)>
+<!ELEMENT ItemCategory (#PCDATA)>
+<!ELEMENT MinQuantityToBuy (#PCDATA)>
+<!ELEMENT ItemLifeTime (#PCDATA)>
+<!ELEMENT Offers (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ATTLIST Item id ID #REQUIRED>
+<!ATTLIST ItemType noofyears CDATA #FIXED "two">
+<!ATTLIST ItemName country CDATA  #IMPLIED>
+<!ATTLIST Short-Form isNewItem (yes | no) "no">
+
+]>
+<Scheme>
+    <Item id="I1">
+        <ItemName>
+             <Short-Form isNewItem="yes">MacPro</Short-Form>
+            <Display-Name>Mav book pro 15.6</Display-Name>
+        </ItemName>
+        <ItemType>Laptops</ItemType>
+        <ItemPrice>3000</ItemPrice>
+        <QuantityLeft> 20 </QuantityLeft>
+        <StartDate>12/11/2022</StartDate>
+        <ItemCategory>Electronics</ItemCategory>
+        <MinQuantityToBuy>1</MinQuantityToBuy>
+        <ItemLifeTime> 10 days</ItemLifeTime>
+        <Offers>12 percent </Offers>
+        <Description>iPhone believe in the best!</Description>
+
+    </Item>
+    <Item id="I2">
+        <ItemName>
+            <Short-Form isNewItem="yes">S31</Short-Form>
+           <Display-Name>samsung Galaxy S31/Display-Name>
+       </ItemName>
+        <ItemType> Mobile</ItemType>
+        <ItemPrice>1500</ItemPrice>
+        <QuantityLeft> 14 </QuantityLeft>
+        <StartDate>20/05/2022</StartDate>
+        <ItemCategory>Electronics</ItemCategory>
+        <MinQuantityToBuy>1</MinQuantityToBuy>
+        <ItemLifeTime>56 hrs</ItemLifeTime>
+        <Offers>4 percent </Offers>
+        <Description>Samsung believe in the best!</Description>
+
+    </Item>
+    <Item id="I3">
+        <ItemName>
+            <Short-Form isNewItem="no">iPhone</Short-Form>
+           <Display-Name>iPhone14 Pro</Display-Name>
+       </ItemName>
+        <ItemType> Mobile</ItemType>
+        <ItemPrice>2000</ItemPrice>
+        <QuantityLeft> 15 </QuantityLeft>
+        <StartDate>16/10/2022</StartDate>
+        <ItemCategory>Electronics</ItemCategory>
+        <MinQuantityToBuy>1</MinQuantityToBuy>
+        <ItemLifeTime>6 hrs</ItemLifeTime>
+        <Offers>0 percent </Offers>
+        <Description>iPhone believe in the best!</Description>
+
+    </Item>
+</Scheme></Description>
+
+    </Item>
+    <Item id="I2">
+        <ItemName>
+            <Short-Form isNewItem="yes">Rosted Tawa Fish Curry</Short-Form>
+           <Display-Name>Tawa Fish</Display-Name>
+       </ItemName>
+        <ItemType> Non Veg</ItemType>
+        <ItemPrice>350</ItemPrice>
+        <QuantityLeft> 45 </QuantityLeft>
+        <StartDate>21/10/2022</StartDate>
+        <ItemCategory>Curries</ItemCategory>
+        <MinQuantityToBuy>2</MinQuantityToBuy>
+        <ItemLifeTime>5 hrs</ItemLifeTime>
+        <Offers>42 percent </Offers>
+        <Description>iPhone believe in the best!</Description>
+
+    </Item>
+    <Item id="I3">
+        <ItemName>
+            <Short-Form isNewItem="no">iPhone</Short-Form>
+           <Display-Name>iPhone14 Pro</Display-Name>
+       </ItemName>
+        <ItemType> Mobile</ItemType>
+        <ItemPrice>2000</ItemPrice>
+        <QuantityLeft> 15 </QuantityLeft>
+        <StartDate>16/10/2022</StartDate>
+        <ItemCategory>Electronics</ItemCategory>
+        <MinQuantityToBuy>1</MinQuantityToBuy>
+        <ItemLifeTime>6 hrs</ItemLifeTime>
+        <Offers>0 percent </Offers>
+        <Description>iPhone believe in the best!</Description>
+
+    </Item>
+</Scheme>

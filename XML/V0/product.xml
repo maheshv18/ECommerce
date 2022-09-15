@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE products SYSTEM "product_type.dtd">
+<products>
+    <product>
+        <productID>101</productID>
+        <oname>Mahesh</oname>
+        <phone>6384803545</phone>
+        <address>Ettimadai, Coimbatore</address>
+        <date>25/08/2022</date>
+        <product>
+            <sproduct>
+                <product_name>Mobile</product_name>
+                <quantity>1</quantity>
+                <discount>$1000</discount>
+            </sproduct>
+            <sproduct>
+                <product_name>Laptop</product_name>
+                <quantity>1</quantity>
+                <discount>$1500</discount>
+            </sproduct>
+        </product>
+        <amount>2500</amount>
+    </product>
+</products>

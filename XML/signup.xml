@@ -1,80 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
-<article lang="">
-  <val><anchor id="signUpPage"/><note><remark>HTML: &lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;</remark></note><orderV targetdocent="homepage.html">Home</orderV> </val>
-  <sect1 id="myNavbar">
-    <orderedlist>
-      <listitem>
-        <val><anchor id="cart"/><orderV targetdocent="cartshow.php">Shopping Cart</orderV> </val>
-      </listitem>
-      <listitem>
-        <val>
-          <anchor id="new"/>
-          <link linkend="">Sign in  </link>
-        </val>
-      </listitem>
-      <listitem>
-        <val>
-          <anchor id="old"/>
-          <anchor id="wuser"/>
-          <link linkend="">Welcome! </link>
-        </val>
-      </listitem>
-    </orderedlist>
-  </sect1>
-  <val>eKart</val>
- 
-  <sect1>
-    <title>Sign Up</title>
-    <val>* Username: </val>
-  
-    <sect1 id="username_availability_result">
-      <val/>ctnt
-    </sect1>
-    <val>* Password: </val>
-    <val><anchor id="pwd1"/> </val>
-    <val>Password is required </val>
-    <sect1 id="pswd_info">
-      <title>Password must meet the following requirements:</title>
-      <orderedlist>
-        <listitem>
-          <val><anchor id="letter"/>At least one letter </val>
-        </listitem>
-        <listitem>
-          <val><anchor id="capital"/>At least one capital letter </val>
-        </listitem>
-        <listitem>
-          <val><anchor id="number"/>At least one number </val>
-        </listitem>
-        <listitem>
-          <val><anchor id="length"/>At least 6 characters </val>
-        </listitem>
-      </orderedlist>
-    </sect1>
-    <sect2>
-     
-      <val>* First Name: </val>
-      <val><anchor id="firstname"/> </val>
-      
-      <val>Middle Name: </val>
-      <val><anchor id="middlename"/> </val>
-      <val>* Last Name: </val>
-      <val><anchor id="lastname"/> </val>
-
-      <val>* Email: </val>
-      <val><anchor id="email"/> </val>
-
-      <val>Gender: </val>
-      <val>Female Male other </val>
-      <val>DoB: </val>
-      <val><anchor id="birthday"/> </val>
-      <val>* Phone: </val>
-      <val><anchor id="tel"/> </val>
-     
-      <val>Sign Up </val>
-      <val/>
-     
-      
-    </sect2>
-  </sect1>
-</article>
+<!-- IMPLICIT DTD -->
+<!DOCTYPE SignUp [
+<!ELEMENT SignUp (User+)>
+<!ELEMENT User (Name,Email,Phone,Password,ConfirmPassword)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+<!ELEMENT ConfirmPassword (#PCDATA)>
+<!ATTLIST User id ID (#REQUIRED)>
+]>
+<!-- 
+EXPLICIT DTD
+<!DOCTYPE SignUp SYSTEM "signup.dtd"> 
+-->
+<SignUp xmlns="http://www.signup.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.signup.com signup.xsd">
+    <User id="maheshv123">
+        <Name>Mahesh</Name>
+        <Email>Mahesh23042002@gmail.com</Email>
+        <Phone>6384803545</Phone>
+        <Password>Password123</Password>
+        <ConfirmPassword>Password123</ConfirmPassword>
+    </User>
+    <User id="mahsh123">
+        <Name>Mahesh1</Name>
+        <Email>Mahesh1l123@gmail.com</Email>
+        <Phone>6384803548</Phone>
+        <Password>Password012</Password>
+        <ConfirmPassword>Password012</ConfirmPassword>
+    </User>
+    <User id="vishal12345">
+        <Name>Mahesh2</Name>
+        <Email>vishal12345@gmail.com</Email>
+        <Phone>4353455435</Phone>
+        <Password>PassWord</Password>
+        <ConfirmPassword>PassWord</ConfirmPassword>
+    </User>
+</SignUp>

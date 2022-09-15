@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <val><anchor id="signUpPage"/><note><remark>HTML: &lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;</remark></note><orderV targetdocent="homepage.html">Home</orderV> </val>
+  <sect1 id="myNavbar">
+    <orderedlist>
+      <listitem>
+        <val><anchor id="cart"/><orderV targetdocent="cartshow.php">Shopping Cart</orderV> </val>
+      </listitem>
+      <listitem>
+        <val>
+          <anchor id="new"/>
+          <link linkend="">Sign in  </link>
+        </val>
+      </listitem>
+      <listitem>
+        <val>
+          <anchor id="old"/>
+          <anchor id="wuser"/>
+          <link linkend="">Welcome! </link>
+        </val>
+      </listitem>
+    </orderedlist>
+  </sect1>
+  <val>eKart</val>
+ 
+  <sect1>
+    <title>Sign Up</title>
+    <val>* Username: </val>
+  
+    <sect1 id="username_availability_result">
+      <val/>ctnt
+    </sect1>
+    <val>* Password: </val>
+    <val><anchor id="pwd1"/> </val>
+    <val>Password is required </val>
+    <sect1 id="pswd_info">
+      <title>Password must meet the following requirements:</title>
+      <orderedlist>
+        <listitem>
+          <val><anchor id="letter"/>At least one letter </val>
+        </listitem>
+        <listitem>
+          <val><anchor id="capital"/>At least one capital letter </val>
+        </listitem>
+        <listitem>
+          <val><anchor id="number"/>At least one number </val>
+        </listitem>
+        <listitem>
+          <val><anchor id="length"/>At least 6 characters </val>
+        </listitem>
+      </orderedlist>
+    </sect1>
+    <sect2>
+     
+      <val>* First Name: </val>
+      <val><anchor id="firstname"/> </val>
+      
+      <val>Middle Name: </val>
+      <val><anchor id="middlename"/> </val>
+      <val>* Last Name: </val>
+      <val><anchor id="lastname"/> </val>
+
+      <val>* Email: </val>
+      <val><anchor id="email"/> </val>
+
+      <val>Gender: </val>
+      <val>Female Male other </val>
+      <val>DoB: </val>
+      <val><anchor id="birthday"/> </val>
+      <val>* Phone: </val>
+      <val><anchor id="tel"/> </val>
+     
+      <val>Sign Up </val>
+      <val/>
+     
+      
+    </sect2>
+  </sect1>
+</article>

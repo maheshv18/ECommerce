@@ -1,0 +1,54 @@
+<?xml version="1.0"?>  
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.signup.com"
+xmlns="http://www.signup.com"
+elementFormDefault="qualified">
+<xs:element name="SignUp">  
+  <xs:complexType>
+    <xs:sequence>
+        <xs:element name="User"  minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+                <xs:all>
+                    <xs:element name="Name">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[0-9a-zA-Z_ ]{3,}"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Email">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Phone" >
+                      <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                          <xs:pattern value="[1-9][0-9]{9}"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Password">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[A-Za-z0-9#?!@$%^*-].{6,}"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="ConfirmPassword">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[A-Za-z0-9#?!@$%^*-].{6,}"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                </xs:all>
+                <xs:attribute name="id" type="xs:ID"/>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>   
+</xs:schema> 

@@ -1,0 +1,13 @@
+<!ELEMENT products (product+)>
+<!ELEMENT product (productID, oname, phone, address, date, product1,amount)>
+<!ELEMENT product1 (sproduct+)>
+<!ELEMENT sproduct (product_name, quantity, discount)>
+<!ELEMENT product_name (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT discount (#PCDATA)>
+<!ELEMENT productID (#PCDATA)>
+<!ELEMENT oname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>
